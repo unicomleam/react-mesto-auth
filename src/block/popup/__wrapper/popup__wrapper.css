@@ -1,0 +1,5 @@
+.popup__wrapper {
+    grid-area: form;
+    background-color: #fff;
+    border-radius: 10px;
+}

@@ -1,0 +1,7 @@
+.popup__error_visible {
+    display: block;
+    position: absolute;
+    text-align: left;
+    margin-top: 5px;
+    max-width: 358px;
+}

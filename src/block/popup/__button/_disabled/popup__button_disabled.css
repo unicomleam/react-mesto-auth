@@ -1,0 +1,6 @@
+.popup__button_disabled {
+    background: none;
+    border: 1px solid #E5E5E5;
+    color: #E5E5E5;
+    cursor: default;
+}

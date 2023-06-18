@@ -1,0 +1,13 @@
+.popup__image {
+    display: block;
+    grid-area: image;
+    max-width: 75vw;
+    max-height: 75vh;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .popup__image {
+        margin-top: 16px;
+        margin-bottom: 8px;
+    }
+}

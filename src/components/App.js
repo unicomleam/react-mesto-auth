@@ -38,7 +38,7 @@ function App() {
   const [isLoading, setIsLoading] = useState(false);
 
   const [loggedIn, setLoggedIn] = useState(false);
-  const [registered, setRegistered] = useState(false);
+  const [registered, setRegistered] = useState();
   const [email, setEmail] = useState("");
   const [infoTooltipText, setInfoTooltipText] = useState("");
   const [infoTooltipPopup, setInfoTooltipPopup] = useState(false);
@@ -192,7 +192,7 @@ function App() {
     setEmail("");
   }
 
-  useEffect(() => { tokenCheck() }, []);
+  useEffect(() => { tokenCheck() }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
     <CurrentUserContext.Provider value={currentUser}>

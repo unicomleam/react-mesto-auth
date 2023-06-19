@@ -18,6 +18,10 @@ export class Api {
         });
     }
 
+    getDataArray() {
+        return Promise.all([this.getUserInfo(), this.getInitialCards()]);
+    }
+
     patchUserInfo({ name, about }) {
         return this._sendRequest(`${this.baseUrl}/users/me`, {
             method: "PATCH",

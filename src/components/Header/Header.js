@@ -8,7 +8,7 @@ function Header({ text, email, link, onSignOut }) {
             <div className="header__info">
                 <p className="header__email">{email}</p>
                 <button className="header__button" onClick={onSignOut}>
-                    <Link className="header__link" to={link}>{text}</Link>
+                    <Link className="header__link effect" to={link}>{text}</Link>
                 </button>
             </div>
         </header>
